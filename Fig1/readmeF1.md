@@ -2,4 +2,4 @@ Code and data to reproduce Figs. 1B and 1C. Gnuplot scripts also provided.
 
 The model is simulated in Fortran for 50 generations with the file Full_SIR_full_0203.f90. To plot the data as in Fig. 1B, running this code produces the file evol.dat, which is used by plot_exampl.plt. To plot the data without volume changes, set vol_locus(k)=2.0 in line 125, and run again the model and the gnuplot script.
 
-To plot 
+To plot Fig 1C, the code from Full_SIR_full_0203.f90 produces as an output the levels of Sir binding at silencers and nucleosomes, acetylation and methylation for silenced states and expressed states. These data, for the parameters specified in the SI, has been written into the file ChIP_sim.dat, after appropriate normalisation. The experimental ChIP bedgraphs (correspondiong to these simulated data) is stored in the files Saxton_2022_1D.csv, Saxton_2022_1H.csv, Saxton_2022_1J.csv (data from Saxton and Rine, Molecular Cell, 2022). The data is plotted as in Fig. 1C by ChIPs.plt, where the simulated data has been weighted by the percentage of silenced/expressed cells specified in Fig. 1 of Saxton and Rine, 2022.
