@@ -1,3 +1,3 @@
 Reproducing Fig. 5 and SI Fig. 5
 
-The output of the model is obtained by running Full_SIR_full_0203F5.f90. The output are histone PTM profiles for different strains at different Sir concentrations, which are stored in files named profiles_f_"STRAIN"_sir4t_"CONC".dat
+The output of the model is obtained by running Full_SIR_full_0203F5.f90. The output are histone PTM profiles for different strains at different Sir concentrations, which are stored in files named profiles_f_"STRAIN"_sir4t_"CONC".dat. These profiles are fed into the Jupyter notebook (Julia kernel) to compute the bimodality coefficient (BC) for each strain and concentration. The theoretical BC is stored in BC_strains.dat. The experimental GFP expression histograms are stored in wt_titr_image_digit.csv, rap1_titr_image_digit.csv, sir1_titr_image_digit.csv and their BC is caculated with Exp_BC.ipnyb, whose output is BC_exp_strains.dat.
