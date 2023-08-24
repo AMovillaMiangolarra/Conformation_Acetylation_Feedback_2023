@@ -1,4 +1,4 @@
 # Conformation_Acetylation_Feedback_2023
-Research repository for the manuscript "Two-way feedback between chromatin compaction and histone modifications underlies S. cerevisiae heterochromatin bistability" (DOI: ).
+Research repository for the manuscript "Two-way feedback between chromatin compaction and histone modifications underlies S. cerevisiae heterochromatin bistability" (bioRxiv, https://doi.org/10.1101/2023.08.12.552948 ).
 
 The baseline model (with final parameters for a sir1D genotype) is implemented in the file SIR_HMR_silencing.f90, which outputs to screen a set of statistics of the 10^5 generation run. In the folders, code, scripts and most of data (except large files) are provided  to reproduce the figures in the manuscript. The model was implemented in Fortran (which means that the code needs to be compiled before running) and the parameters used in each Figure are already set in the different model implementations. Each figure includes a readme file detailing the workflow required to reproduce the figure.
